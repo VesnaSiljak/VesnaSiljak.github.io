@@ -1,0 +1,186 @@
+div{
+	/*border:solid;*/
+	padding:10px;
+	color:red;
+	}
+h1{
+	text-align:center;
+	font-family: 'Satisfy', cursive;
+	text-transform:capitalize;
+	}
+/********** combination style start************/	
+#combinations{
+	width:300px;
+	display:inline-block;
+	}
+#combinations li{
+	list-style:none;
+}
+#combinations li span{
+	width:50px;
+	height:50px;
+	border:solid 1px grey;
+	display:inline-block;
+	border:solid white 2px;
+	border-radius:2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #93c0c1;
+	-webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+	}
+/********** combination style end************/	
+#true-false{
+	width:300px;
+	display:inline-block;
+}
+#true-false li{
+	list-style:none;
+}
+#true-false li span{
+	width:50px;
+	height:50px;
+	border: solid 2px white;
+	border-radius:50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display:inline-block;
+	background: #21272f;
+}
+#solution li{
+	list-style:none;
+	width:326px;
+	float:left;
+	
+}
+#solution li span{
+	width:50px;
+	height:50px;
+	border:solid 1px grey;
+	display:inline-block;
+	border: solid #60a3b7 2px;
+	border-radius:2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #93c0c1;
+	-webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.53);
+	}
+#solution div{
+	float:left;
+	width:200px;
+}
+#solution{
+	overflow:hidden;
+}
+body{	
+	background: rgb(167,207,223); 
+	background: -moz-linear-gradient(-45deg,  rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%); 
+	background: -webkit-linear-gradient(-45deg,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+html{
+	min-height:100%;
+}
+.buttoncolor{
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor:pointer;
+}
+#red{
+	background:red;
+}
+#green{
+	background:green;
+}
+#yellow{
+	background:yellow;
+}
+#blue{
+	background:blue;
+}
+#purple{
+	background:purple;
+}
+#grey{
+	background:grey;
+}
+#check{
+	position: relative;
+    top: -5px;
+	-webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all  ease-out 0.5s;
+}
+#check i{
+	font-size:23px;
+	-webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all  ease-out 0.5s;
+}
+#check:hover{
+	background:blue;
+	-webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all  ease-out 0.5s;
+}
+#check:hover i{
+	color:white;
+	-webkit-transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+    transition: all  ease-out 0.5s;
+}
+#holder {
+	width: 650px;
+	margin:auto;
+}
+#ni {
+    margin-left: 10px;
+    width: 200px;
+    height: 40px;
+    background: blue;
+    border: solid 2px deepskyblue;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+	#solution div{
+		width:250px;
+	}
+	#holder {
+		width: 95%;
+		overflow:hidden;
+	}
+	#combinations, #true-false {
+		width:45%;
+	}
+	#combinations li span, #true-false li span, #solution li span{
+	width:40px;
+	height:40px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#combinations li span, #true-false li span, #solution li span{
+	width:20px;
+	height:20px;
+	}
+	#combinations, #true-false {
+		width:40%;
+	}
+}
+
